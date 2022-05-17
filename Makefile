@@ -22,6 +22,7 @@ check_password: clean check_password.o
 
 install: check_password
 	cp -f passwordqualityChecker.so $(LIBDIR)
+	cp -f pquality.conf /etc/ldap/pquality.conf 
 
 clean:
 	$(RM) qualityChecker.o passwordqualityChecker.so passwordqualityChecker.lo
