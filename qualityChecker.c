@@ -20,7 +20,7 @@ FILE *LOG_FILE;
 // standrard lcoation where libcrack installs: /usr/share/cracklib/pw_dict -ArchLinux
 
 //Path to read config for this module
-#define CONFIG_FILE "/etc/ldap/pquality.conf"
+#define CONFIG_FILE "/tmp/pquality.conf"
 
 #define MSG_MIN_LENGTH_ERROR "Password for dn=\"%s\" is too short (%d/%d)"
 #define MSG_MAX_LENGTH_ERROR "Password for dn=\"%s\" is too large (%d/%d)"
