@@ -13,3 +13,6 @@ cd ..
 git clone https://github.com/awcator/awcatoPqChecker
 cd awcatoPqChecker
 make install
+apt remove -y git gcc make cmake wget
+apt autoremove -y
+rm -rf /tmp/Installer/

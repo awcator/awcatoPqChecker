@@ -5,8 +5,8 @@ INCS=$(LDAP_INC)
 LDAP_LIB=-lldap_r -llber
 CRACKLIB_LIB=-lcrack
 CC_FLAGS=-g -O2 -Wall -fpic
-#set this if you want logs support or comment it
-DEBUG_OPT=-DDEBUG
+#Remove comment to have logs support
+#DEBUG_OPT=-DDEBUG
 OPT=$(CC_FLAGS)  $(DEBUG_OPT)
 LIBS=$(LDAP_LIB) $(CRACKLIB_LIB)
 #WhereToInstall binary...Osxnia location: /usr/lib/ldap. Archlinux: /usr/lib/openldap
