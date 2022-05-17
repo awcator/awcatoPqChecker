@@ -185,7 +185,7 @@ int check_password (char *pPasswd, char **ppErrStr, Entry *pEntry){
     if(var!=NULL){
         for(int i=0;i<password_length;i++){
             for(int j=0;j<strlen(var);j++){
-                if(var[j]==pPasswd[i]){
+                if(var[j]==pPasswd[i] || (pPasswd[i]>=0 && pPasswd[i]<=32)){
                     free(var);
                     abortAndRaise(MSG_UNSUPPORTED_CHAR_ERROR,pEntry->e_name.bv_val,password_length,0,ppErrStr);
                     return (EXIT_FAILURE);
