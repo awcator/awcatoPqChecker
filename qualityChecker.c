@@ -9,7 +9,7 @@
 #include <portable.h>
 #include <slap.h>
 //From crakLib 
-#include "crack.h"
+#include <crack.h>
 //If Need of logs?
 #if defined(DEBUG)
 FILE *LOG_FILE;
