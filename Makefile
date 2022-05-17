@@ -10,7 +10,7 @@ DEBUG_OPT=-DDEBUG
 OPT=$(CC_FLAGS)  $(DEBUG_OPT)
 LIBS=$(LDAP_LIB) $(CRACKLIB_LIB)
 #WhereToInstall binary...Osxnia location: /usr/lib/ldap. Archlinux: /usr/lib/openldap
-LIBDIR=/usr/lib/openldap/
+LIBDIR=/usr/lib/ldap/
 
 all: 	check_password
 
